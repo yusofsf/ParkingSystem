@@ -65,7 +65,7 @@
             </div>
         </div>
         <script>
-            if (localStorage.getItem('token') === null) {
+            if (localStorage.getItem('token')) {
                 document.getElementById('guest').classList.add('hidden');
             } else {
                 document.getElementById('auth').classList.add('hidden');
