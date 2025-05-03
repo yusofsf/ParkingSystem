@@ -18,6 +18,7 @@
                     maxlength="19"
                     minlength="12"
                     required
+                    autocomplete="off"
                 />
             </div>
 
@@ -30,6 +31,7 @@
                         name="exp_month"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                         required
+                        autocomplete="off"
                     />
                 </div>
 
@@ -41,6 +43,7 @@
                         name="exp_year"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                         required
+                        autocomplete="off"
                     />
                 </div>
             </div>
@@ -55,6 +58,7 @@
                     placeholder="123"
                     maxlength="4"
                     required
+                    autocomplete="off"
                 />
             </div>
 

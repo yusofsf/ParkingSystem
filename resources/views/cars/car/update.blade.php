@@ -25,6 +25,7 @@
                         name="model"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                         required
+                        autocomplete="off"
                     />
                 </div>
 
@@ -36,6 +37,7 @@
                         name="color"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                         required
+                        autocomplete="off"
                     />
                 </div>
 
@@ -49,6 +51,7 @@
                         name="date_of_manufacture"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                         required
+                        autocomplete="off"
                     />
                 </div>
 

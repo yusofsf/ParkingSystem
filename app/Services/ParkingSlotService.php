@@ -42,9 +42,9 @@ class ParkingSlotService implements ParkingSlotServiceInterface
         $this->days = round($begin->diffInDays($end, true));
         $this->hours = ceil($begin->copy()->addDays($this->days)->diffInHours($end, true));
 
-        return (($parkingSlot->price_per_day * $this->days) +
+        return round(($parkingSlot->price_per_day * $this->days) +
             ($parkingSlot->price_per_hour * $this->hours) +
-            ParkingSlotService::BASE_PRICE);
+            ParkingSlotService::BASE_PRICE, 2);
     }
 
     private function calcTax(): float

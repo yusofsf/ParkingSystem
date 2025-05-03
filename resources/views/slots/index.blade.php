@@ -11,6 +11,7 @@
         <div class="mb-6 flex flex-col items-center justify-between gap-4 md:flex-row">
             <div class="w-full md:w-1/3">
                 <input type="text"
+                       autocomplete="off"
                     id="searchInput"
                     placeholder="Search slots..."
                     class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
