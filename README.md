@@ -90,6 +90,10 @@ email: manager@gmail.com
 ```
 ---
 #### ساختار کلی پروژه
+</div>
+
+<div dir="rtl">
+    
 ```
 app/
 ├── Enums/
