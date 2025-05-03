@@ -150,7 +150,7 @@
                             <span class="font-medium">email:</span>
                             ${user.email}
                         </p>
-                        ${user.role === 3 ? `
+                        ${user.role !== 3 ? `
                         <div class="mt-4 flex space-x-2">
                             <button onclick="deleteUser(${user.id})"
                                     class="text-red-600 hover:text-red-800 text-sm font-medium">
