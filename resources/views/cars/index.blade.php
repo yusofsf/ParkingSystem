@@ -172,11 +172,9 @@
                                 Delete
                             </button>
                         </div>
-                    ,</div>
+                    </div>
                 </div>
-            `,
-                )
-                .join('');
+            `).join('');
         }
 
         async function deleteCar(carId) {
