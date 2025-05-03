@@ -192,7 +192,7 @@
 
                 if (response.ok) {
                     alert(data.message);
-                    window.location.href = '/cars'
+                    window.location.href = `/users/${localStorage.getItem('user_id')}/cars`;
                 } else {
                     if (response.status === 403) {
                         alert(data.message);

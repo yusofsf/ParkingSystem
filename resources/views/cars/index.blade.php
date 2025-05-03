@@ -172,6 +172,7 @@
                                 Delete
                             </button>
                         </div>
+                    ,</div>
                 </div>
             `,
                 )
