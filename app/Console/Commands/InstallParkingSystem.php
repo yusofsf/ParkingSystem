@@ -26,15 +26,6 @@ class InstallParkingSystem extends Command
      */
     public function handle(): void
     {
-        $this->info('installing packages');
-        $install = Process::timeout(360)->run('composer install && npm install');
-
-        if ($install->failed()) {
-            $this->error($install->errorOutput());
-        } else {
-            $this->info('packages installed');
-        }
-
         $this->info('creating .env, generate key and migrate');
         $cp = shell_exec('cp .env.example .env');
         $result = Process::timeout(120)->run('php artisan key:generate && php artisan migrate -–seed');

@@ -43,37 +43,42 @@
 git clone https://github.com/yusofsf/ParkingSystem.git
 cd ParkingSystem 
 ```
+#### 2.1 نصب وابستگی ها
+```bash
+composer install
+npm install
+```
 
-#### 2.نصب با command
+#### 3.1 نصب با command
 ```bash
 php artisan install:ParkingSystem
 php artisan serve
 ```
 ### یا 
 
-#### 1.3 نصب وابستگی ها
+#### 1.2 نصب وابستگی ها
 ```bash
 composer install
 npm install
 ```
 
-#### 2.3 تولید key و فایل env.
+#### 2.2 تولید key و فایل env.
 ```bash
 cp .env.example .env 
 php artisan key:generate
 ```
-#### 3.3 تنظیم اطلاعات DB در فایل env.
+#### 3.2 تنظیم اطلاعات DB در فایل env.
 ```bash
 DB_DATABASE=your-db-name
 DB_USERNAME=your-username
 DB_PASSWORD=your-password
 ```
 
-#### 4.3 اجرای migrate و seed DB
+#### 4.2 اجرای migrate و seed DB
 ```bash
 php artisan migrate --seed
 ```
-#### 5.3 اجرای پروژه
+#### 5.2 اجرای پروژه
 ```bash
 npm run dev
 php artisan serve
