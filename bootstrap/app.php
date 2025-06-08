@@ -1,5 +1,6 @@
 <?php
 
+use App\Console\Commands\InstallParkingSystem;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -17,5 +18,5 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })
-    ->withCommands((array)\App\Console\Commands\InstallParkingSystem::class)
+    ->withCommands([InstallParkingSystem::class])
     ->create();
